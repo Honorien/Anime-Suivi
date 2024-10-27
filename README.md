@@ -20,21 +20,6 @@ Suivi d'Anime - Édition Deluxe est une application web simple et élégante qui
 - Design responsive pour une utilisation sur desktop et mobile
 - Pop-up d'explication pour les nouveaux utilisateurs
 
-## Installation
-
-1. Clonez ce dépôt sur votre machine locale :
-   ```
-   git clone https://github.com/votre-nom-utilisateur/anime-suivi.git
-   ```
-
-2. Naviguez dans le dossier du projet :
-   ```
-   cd suivi-anime-suivi
-   ```
-
-3. Ouvrez le fichier `index.html` dans votre navigateur web préféré.
-
-Aucune installation supplémentaire n'est nécessaire, car l'application fonctionne entièrement dans le navigateur.
 
 ## Utilisation
 
