@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suivi d'Anime - Édition Super Deluxe Premium Gold Silver Diamond</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="input-group">
+        <input type="text" id="animeInput" placeholder="Nom de l'anime">
+        <input type="number" id="seasonInput" placeholder="Saison" min="1">
+        <input type="number" id="episodeInput" placeholder="Épisode" min="1">
+        <button id="addAnime">Ajouter Anime</button>
+    </div>
+    <div id="error" class="error"></div>
+
+    <div class="search-sort">
+        <input type="text" id="searchInput" placeholder="Rechercher un anime">
+        <select id="sortSelect">
+            <option value="name">Trier par nom</option>
+            <option value="season">Trier par saison</option>
+            <option value="episode">Trier par épisode</option>
+        </select>
+    </div>
+
+    <div class="tabs">
+        <button class="tab active" data-tab="ongoing">En Cours</button>
+        <button class="tab" data-tab="finished">Fini</button>
+    </div>
+
+    <div id="ongoingList" class="anime-list"></div>
+    <div id="finishedList" class="anime-list" style="display: none;"></div>
+
+    <div class="import-export">
+        <button id="exportButton">Télécharger la liste</button>
+        <button id="importButton">Importer une liste</button>
+        <input type="file" id="fileInput" accept=".json">
+    </div>
+</div>
+
+<div id="popup" class="popup-overlay" style="display: none;">
+    <div class="popup-content">
+        <h2>Bienvenue sur Suivi d'Anime !</h2>
+        <p>Cette application vous permet de suivre facilement vos animes en cours et terminés.</p>
+        <p>Voici comment ça fonctionne :</p>
+        <ul>
+            <li>Ajoutez un anime en remplissant le nom, la saison et l'épisode.</li>
+            <li>Utilisez les boutons pour marquer un anime comme terminé, le modifier ou le supprimer.</li>
+            <li>Recherchez et triez vos animes facilement.</li>
+            <li>Toutes vos données sont stockées localement dans le cache de votre navigateur.</li>
+            <li>Vous pouvez exporter votre liste pour la sauvegarder ou l'importer sur un autre appareil.</li>
+        </ul>
+        <button class="close-popup">Compris !</button>
+    </div>
+</div>
+
+<script src="script.js">
+</script>
+</body>
+</html>
